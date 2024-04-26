@@ -1,5 +1,3 @@
-import { cn } from "./ui/utils";
-
 interface PageLayoutProps {
   children: React.ReactNode;
   title?: string;
@@ -16,7 +14,7 @@ export default function PageLayout({
   return (
     <div className="">
       {(title || description) && (
-        <div className="flex flex-col gap-1">
+        <div className="">
           {title && <h1 className="">{title}</h1>}
           {description && <span className="">{description}</span>}
         </div>
