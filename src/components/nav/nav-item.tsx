@@ -14,13 +14,13 @@ export function NavItem({
 }) {
   const pathname = usePathname();
 
-  const className = pathname?.startsWith(href) ? "text-slate-900" : "text-slate-100"
+  const className = pathname?.startsWith(href) ? "text-gray-800" : "text-gray-800/60"
 
   return (
     <Link
       href={href}
-      className={"transition-colors hover:text-slate-60 py-1 " + className}
       onClick={onClick}
+      className='text-2xl text-gray-800 hover:text-gray-800/80'
     >
       {label}
     </Link >
