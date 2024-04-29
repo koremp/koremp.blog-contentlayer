@@ -20,7 +20,7 @@ export function NavItem({
     <Link
       href={href}
       onClick={onClick}
-      className='text-2xl text-gray-800 hover:text-gray-800/80'
+      className={'text-2xl hover:text-gray-800/80' + ' ' + className}
     >
       {label}
     </Link >
