@@ -21,17 +21,4 @@ export const Blog = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "posts",
   documentTypes: [Blog],
-  mdx: {
-    rehypePlugins: [
-      rehypeCodeTitles,
-      [
-        // @ts-ignore
-        rehypePrettyCode,
-        {
-          theme: "github-dark",
-          defaultLang: "plaintext",
-        },
-      ],
-    ],
-  },
 });
