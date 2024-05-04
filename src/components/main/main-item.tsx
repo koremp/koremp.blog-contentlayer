@@ -10,7 +10,7 @@ export default function MainItem({
 }) {
   return (
     <Link
-      className="text-xl flex-grow text-gray-800/80 hover:text-gray-800/60"
+      className="flex-wrap basis-2/5 text-xl text-gray-800/80 hover:text-gray-800/60"
       href={href}
     >
       <Link href="">{label}</Link>
