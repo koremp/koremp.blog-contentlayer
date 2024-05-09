@@ -9,8 +9,8 @@ const items = [
 
 export default function Main() {
   return (
-    <main className="py-6 px-6 ">
-      <div className="flex flex-wrap gap-4">
+    <main className="w-full">
+      <div className="flex flex-wrap gap-4 justify-center">
         {
           items.map(({ href, label }) => {
             return (

@@ -9,16 +9,19 @@ export default function MainItem({
   label: string
 }) {
   return (
-    <Link
-      className="flex-wrap basis-2/5 text-xl text-gray-800/80 hover:text-gray-800/60"
-      href={href}
-    >
-      <Link href="">{label}</Link>
-      <div>
-        {
-          <RecentLink href="" title="" desc="" />
-        }
+    <div className="flex-col basis-5/12 bg-teal-400 rounded p-4">
+      <Link className=" text-xl text-gray-800/80 hover:text-gray-800/60" href={href}>
+        {label}
+      </Link>
+      <div className="mt-4 pl-2">
+        <ul>
+          {
+            <li>
+              <RecentLink href="" title="ex" desc="" />
+            </li>
+          }
+        </ul>
       </div>
-    </Link>
+    </div >
   )
 }
