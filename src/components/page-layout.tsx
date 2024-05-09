@@ -12,7 +12,7 @@ export default function PageLayout({
   className,
 }: PageLayoutProps) {
   return (
-    <div className={"px-5 pt-7 pb-16 flex flex-col gap-5 min-h-screen min-w-screen" + " " + className}>
+    <div className={"flex-col min-h-screen min-w-screen px-10" + " " + className}>
       {(title || description) && (
         <div className="flex flex-col gap-2">
           {title && <h1 className="text-2xl flex-col gap-2">{title}</h1>}
