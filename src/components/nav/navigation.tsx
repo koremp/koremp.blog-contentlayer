@@ -31,7 +31,7 @@ export const navs = [
 
 export default function Navigation() {
   return (
-    <nav className="flex justify-center items-center space-x-6 text-sm font-medium gap-2 m-8">
+    <nav className="flex justify-between items-center py-auto text-sm font-medium m-auto">
       {
         navs.map(({ href, label }) => (
           <NavItem href={href} label={label} key={label} />

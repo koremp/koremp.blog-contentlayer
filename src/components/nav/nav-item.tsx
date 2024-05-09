@@ -1,5 +1,6 @@
 "use client"
 
+import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -20,7 +21,7 @@ export function NavItem({
     <Link
       href={href}
       onClick={onClick}
-      className={'text-2xl hover:text-gray-800/80' + ' ' + className}
+      className={classNames('text-2xl hover:text-gray-800/80', className)}
     >
       {label}
     </Link >
